@@ -12,7 +12,7 @@ if (process.env.NODE_ENV === 'test') {
   numbers = getNumbersFromFile('sorted_numbers.txt')
 }
 
-console.log(`Got ${numbers.length} numbers from the file`)
+console.log(`Got ${numbers?.length} numbers from the file`)
 
 app.use(express.json())
 

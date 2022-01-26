@@ -24,7 +24,14 @@ const saveNumbersToFile = (array, filename) => {
 }
 
 const getNumbersFromFile = (filename) => {
-  let all = fs.readFileSync(filename, 'utf8')
+  let all
+
+  try {
+    all = fs.readFileSync(filename, 'utf8')
+  } catch (error) {
+    console.log(error)
+    return null
+  }
   
   // remove any extra space and split the content line by line
   let textByLine = all.trim().split('\n')
