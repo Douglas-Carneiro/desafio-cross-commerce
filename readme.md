@@ -7,8 +7,9 @@ To install the dependecies just run `npm install` at the root folder of the proj
 To run the tests execute the command `npm run test` in the terminal at the root folder of the project
 
 ## Running the application ##
-To run the application simply run `npm start` at the root folder of the project
-
+To run the application simply run `npm start` at the root folder of the project.
+The API works in the same way as the challenge API, using the `page` parameter to navigate, when the server runs out of numbers it returns an empty array
+ 
 ## Explaining the file structure ##
 
 **index.js** - is the main file where the main operations happen, this is file where the ETL pipeline is located
