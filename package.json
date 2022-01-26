@@ -1,0 +1,28 @@
+{
+  "name": "desafio-cross-commerce",
+  "version": "1.0.0",
+  "description": "Desafio do processo seletivo da Cross Commerce",
+  "main": "index.js",
+  "scripts": {
+    "start": "NODE_ENV=production node index.js",
+    "test": "NODE_ENV=test jest --verbose --runInBand"
+  },
+  "keywords": [
+    "JavaScript",
+    "Node.js"
+  ],
+  "author": "Douglas Carneiro",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.25.0",
+    "express": "^4.17.2"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "jest": "^27.4.7",
+    "supertest": "^6.2.2"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  }
+}
